@@ -310,6 +310,7 @@ int main()
                 if (Keyboard::isKeyPressed(Keyboard::Up) || Keyboard::isKeyPressed(Keyboard::Z)) {
                     //Create a new bullet and add it to the vector
                     bullets.emplace_back(player.animation->sprite.getPosition(), Vector2f(0.f, -30.f), PlayerBullet, true, Color::Green);
+                    sounds.emplace_back(Fire1);
                     Reloading = 1000; //Very dumb implementation but it's 3 am it'll have to do
                 }
             }
